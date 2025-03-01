@@ -1,0 +1,19 @@
+
+.home-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-main{
+    display: flex;
+    /* gap:16px; */
+    flex-direction: column;
+}
+
+.greetings{
+    font-size: 60px;
+}
+.name-content{
+    color: var(--greenAcent);
+    font-size: 60px;
+}
