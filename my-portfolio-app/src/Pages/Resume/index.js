@@ -1,0 +1,66 @@
+import React, { useState } from "react";
+import "./index.css";
+import InformationCard from "../../Components/InformationCard";
+import pageData from "./resumeData.json";
+import { useTheme } from "../../Context/ThemeProvider/Theme";
+import IconCard from "../../Components/IconCard";
+import { IconsMap } from "../../Components/icons";
+
+const Resume = () => {
+  const { theme } = useTheme();
+  const [activeTab, setActiveTab] = useState(0);
+  return (
+    <>
+      <div className={`resume-page-content-wrapper`}>
+        <div
+          className={`navbar-title-container ${
+            theme
+              ? `navbar-title-container-dark`
+              : `navbar-title-container-light`
+          }`}
+        >
+          {pageData.resumeContent.map((resumeItem, index) => {
+            return (
+              <>
+                <div
+                  onClick={() => setActiveTab(index)}
+                  className={` navbar-title ${
+                    theme ? "navbar-title-dark" : "navbar-title-light"
+                  } ${activeTab === index ? "active-tab" : ""}`}
+                >
+                  {resumeItem.navTitle}
+                </div>
+              </>
+            );
+          })}
+        </div>
+        <div className={`resume-content-wrapper`}>
+          <h1>{pageData?.resumeContent[activeTab]?.title}</h1>
+          <h4 className={`${theme ? "description-dark" : "description-light"}`}>
+            {pageData?.resumeContent[activeTab]?.description}
+          </h4>
+          <div className={`resume-cards-container`}>
+            {pageData?.resumeContent[activeTab]?.cards?.map((cards) => {
+              return (
+                <InformationCard
+                  year={cards.year}
+                  title={cards.title}
+                  location={cards.location}
+                />
+              );
+            })}
+          </div>
+          <div className={`resume-icon-container`}>
+            {pageData?.resumeContent[activeTab]?.iconCard?.map((iconCards) => {
+              return (
+                <IconCard title={iconCards?.title} icon={iconCards?.icon} />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Resume;
