@@ -14,13 +14,13 @@ const IconCard = (props) => {
     <div className="icon-card-main-wrapper">
       <div>
         <div
-          className={`${hover || divHover ? "show-tooltip" : "hide-tooltip"}`}
+          className={`${hover || divHover ? "show-tooltip" : "hide-tooltip"} ${theme?"":"light"}`}
         >
           {hover ? title : ""}
         </div>
       </div>
       <div
-        className={`icon-card-wrapper`}
+        className={`icon-card-wrapper ${theme?"":"icon-card-wrapper-light"}`}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
@@ -29,7 +29,7 @@ const IconCard = (props) => {
             size={70}
             className={`icon-card-style ${
               theme ? "icon-card-style-dark" : "icon-card-style-light"
-            } ${hover ? "icon-card-hover" : ""}`}
+            } ${hover ? `${theme?`icon-card-hover`:`icon-card-hover-light`}` : ""}`}
           />
         </div>
         <p className="icon-card-title">{title}</p>

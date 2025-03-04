@@ -51,6 +51,24 @@
   border-top: 10px solid var(--white); /* Change color here */
   border-bottom: 9px solid var(--black);
 }
+.light.show-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -19px; /* Position below the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    background: var(--whiteDirty);
+    width: 0;
+    height: 0;
+    border-left: 10px solid var(--white);
+    border-right: 10px solid var(--white);
+    border-top: 10px solid var(--whiteDirty); /* Change color here */
+    border-bottom: 9px solid var(--white);
+    
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
+  }
 .show-tooltip {
   display: flex;
   position: relative;
@@ -62,9 +80,13 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 12;
 }
+.light.show-tooltip {
+    
+    background: var(--whiteDirty);
+    
+  }
 
 .hide-tooltip {
   display: flex;
@@ -74,13 +96,22 @@
 
 .icon-card-style-dark {
 }
-.icon-card-style-light {
+.icon-card-style-light:hover {
+    fill:var(--orange);
 }
 
 .icon-card-hover {
   fill: var(--greenAcent);
 }
-
+.icon-card-hover-light{
+    fill:var(--orange);
+}
 .icon-card-title {
   font-size: 20px;
+}
+.icon-card-wrapper-light{
+    background: var(--whiteDirty);
+}
+.icon-card-wrapper-light:hover{
+    color: var(--orange);
 }
