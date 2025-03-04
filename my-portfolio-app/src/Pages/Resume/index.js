@@ -4,7 +4,7 @@ import InformationCard from "../../Components/InformationCard";
 import pageData from "./resumeData.json";
 import { useTheme } from "../../Context/ThemeProvider/Theme";
 import IconCard from "../../Components/IconCard";
-import { IconsMap } from "../../Components/icons";
+import ValuePairCard from "../../Components/ValuePairCard";
 
 const Resume = () => {
   const { theme } = useTheme();
@@ -55,6 +55,19 @@ const Resume = () => {
               return (
                 <IconCard title={iconCards?.title} icon={iconCards?.icon} />
               );
+            })}
+          </div>
+          <div className="resume-about-section">
+            {pageData?.resumeContent[activeTab]?.listItems?.map((info) => {
+              return (
+                <>
+                  <ValuePairCard
+                    label={info?.label}
+                    value={info?.value}
+                  />
+                </>
+                
+              )
             })}
           </div>
         </div>
