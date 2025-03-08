@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yuvahariJ/portfolio/home/static/css/main.90f44cd3.css",
+    "main.js": "/yuvahariJ/portfolio/home/static/js/main.223b5c15.js",
+    "static/js/488.637e9acc.chunk.js": "/yuvahariJ/portfolio/home/static/js/488.637e9acc.chunk.js",
+    "static/media/ImageProfile.jpeg": "/yuvahariJ/portfolio/home/static/media/ImageProfile.dca76ca012fb8ba1b5c3.jpeg",
+    "index.html": "/yuvahariJ/portfolio/home/index.html",
+    "main.90f44cd3.css.map": "/yuvahariJ/portfolio/home/static/css/main.90f44cd3.css.map",
+    "main.223b5c15.js.map": "/yuvahariJ/portfolio/home/static/js/main.223b5c15.js.map",
+    "488.637e9acc.chunk.js.map": "/yuvahariJ/portfolio/home/static/js/488.637e9acc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90f44cd3.css",
+    "static/js/main.223b5c15.js"
+  ]
+}
