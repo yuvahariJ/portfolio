@@ -32,6 +32,3 @@ input:checked + .button::before{
     background: #fff;
     transform: translateX(25px);
 }
-input{
-    display: none;
-}
