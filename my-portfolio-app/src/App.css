@@ -35,6 +35,9 @@ body {
   color: var(--orange) !important;
 }
 
+.visually-hidden{
+  display: none;
+}
 
 /* colors */
 :root{
@@ -48,4 +51,5 @@ body {
   --lightBlack:#232329;
   --whiteDirty:#ece7e7;
   --whiteDirty-1:#c8bdbd;
+  --grey:#eeeeee78;
 }
