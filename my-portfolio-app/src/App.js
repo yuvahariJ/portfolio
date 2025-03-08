@@ -14,7 +14,7 @@ function App() {
       <div id="main-div" className={theme ? "dark-theme" : "light-theme"}>
         OM
         <Header />
-        <Routes>
+        <Routes basename="/portfolio">
           <Route path="/home" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
