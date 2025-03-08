@@ -36,9 +36,9 @@ const Resume = () => {
         </div>
         <div className={`resume-content-wrapper`}>
           <h1>{pageData?.resumeContent[activeTab]?.title}</h1>
-          <h4 className={`${theme ? "description-dark" : "description-light"}`}>
+          <span className={`${theme ? "description-dark" : "description-light"}`}>
             {pageData?.resumeContent[activeTab]?.description}
-          </h4>
+          </span>
           <div className={`resume-cards-container`}>
             {pageData?.resumeContent[activeTab]?.cards?.map((cards) => {
               return (
