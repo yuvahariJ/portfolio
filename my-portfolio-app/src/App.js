@@ -15,9 +15,9 @@ function App() {
         OM
         <Header />
         <Routes>
-          <Route path="/yuvahariJ/portfolio/home" element={<Home />} />
-          <Route path="/yuvahariJ/portfolio/resume" element={<Resume />} />
-          <Route path="/yuvahariJ/portfolio/contact" element={<Contact />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         {/* <LoadingPage></LoadingPage> */}
       </div>
