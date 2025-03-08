@@ -7,7 +7,7 @@ const ToggleButton = ({...props}) => {
     return (
         <>
             <div className="container">
-                <input type="checkbox" id="checkButton" onChange={onChange} />
+                <input className={`visually-hidden`} type="checkbox" id="checkButton" onChange={onChange} />
                 <label for="checkButton" className="button"></label>
             </div>
         </>

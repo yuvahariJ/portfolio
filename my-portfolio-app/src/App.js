@@ -5,6 +5,7 @@ import LoadingPage from "./Components/Loading";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Resume from "./Pages/Resume";
+import Contact from "./Pages/Contact";
 
 function App() {
   const { theme } = useTheme();
@@ -14,8 +15,9 @@ function App() {
         OM
         <Header />
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/yuvahariJ/portfolio/home" element={<Home />} />
+          <Route path="/yuvahariJ/portfolio/resume" element={<Resume />} />
+          <Route path="/yuvahariJ/portfolio/contact" element={<Contact />} />
         </Routes>
         {/* <LoadingPage></LoadingPage> */}
       </div>

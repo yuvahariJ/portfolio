@@ -97,14 +97,14 @@
 .icon-card-style-dark {
 }
 .icon-card-style-light:hover {
-    fill:var(--orange);
+    fill:var(--black);
 }
 
 .icon-card-hover {
   fill: var(--greenAcent);
 }
 .icon-card-hover-light{
-    fill:var(--orange);
+    fill:var(--black);
 }
 .icon-card-title {
   font-size: 20px;
@@ -113,5 +113,6 @@
     background: var(--whiteDirty);
 }
 .icon-card-wrapper-light:hover{
-    color: var(--orange);
+    color: var(--black);
+    background: var(--goldenYellow);
 }

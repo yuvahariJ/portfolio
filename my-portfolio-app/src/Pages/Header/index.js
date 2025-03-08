@@ -21,6 +21,7 @@ const Header = () => {
                         <Link label="Home" href="/home" />
                         <Link label="Resume" href="/resume" />
                         <Link label="Work" href="/work"/>
+                        <Link label="Contact" href="/contact" />
                         <Button label="Hire Me" />
                         <ToggleButton onChange={ ()=>toggleTheme()} />
                     </div>

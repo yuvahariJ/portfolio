@@ -11,3 +11,9 @@
 .value-color{
     color: var(--white);
 }
+.value-color-light{
+ color: var(--black);
+}
+.label-color-light{
+    color: var(--lightBlack);
+   }
