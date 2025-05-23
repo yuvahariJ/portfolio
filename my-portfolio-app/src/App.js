@@ -8,7 +8,7 @@ import { useTheme } from "./Context/ThemeProvider/Theme";
 function App() {
   const { theme } = useTheme();
   return (
-    <Router basename="/portfolio"> {/* 👈 Add basename here */}
+    <Router> {/* 👈 Add basename here */}
       <div id="main-div" className={theme ? "dark-theme" : "light-theme"}>
         OM
         <Header />
